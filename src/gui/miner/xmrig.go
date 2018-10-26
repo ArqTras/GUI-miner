@@ -318,7 +318,7 @@ func (miner *Xmrig) createConfig(
 	}
 
 	config := XmrigConfig{
-		Algo:        "cryptonight",
+		Algo:        "cryptonight-lite",
 		Av:          0,
 		Background:  runInBackground,
 		Colors:      true,
@@ -337,10 +337,10 @@ func (miner *Xmrig) createConfig(
 			{
 				URL:       poolEndpoint,
 				User:      walletAddress,
-				Pass:      "Stellite GUI Miner",
+				Pass:      "ArQmA GUI Miner",
 				Keepalive: true,
 				Nicehash:  false,
-				Variant:   "xtl",
+				Variant:   "1",
 			},
 		},
 		API: XmrigAPIConfig{
@@ -359,7 +359,7 @@ func (miner *Xmrig) createGPUConfig(
 	walletAddress string) XmrigGPUConfig {
 
 	config := XmrigGPUConfig{
-		Algo:        "cryptonight",
+		Algo:        "cryptonight-lite",
 		Av:          0,
 		Background:  false,
 		Colors:      true,
@@ -376,10 +376,10 @@ func (miner *Xmrig) createGPUConfig(
 			{
 				URL:       poolEndpoint,
 				User:      walletAddress,
-				Pass:      "Stellite GUI Miner",
+				Pass:      "ArQmA GUI Miner",
 				Keepalive: true,
 				Nicehash:  false,
-				Variant:   "xtl",
+				Variant:   "1",
 			},
 		},
 		API: XmrigAPIConfig{

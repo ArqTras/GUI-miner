@@ -65,7 +65,7 @@ let app = {
           $('#trading_crex_volume').html(parsed.volume_crex + ' BTC');
           $('#record_volume').html(parsed.records.volume + ' BTC');
           $('#record_price').html(parsed.records.price + ' BTC');
-          $('#miner_payout').html(parsed.xtl_per_day + ' XTL');
+          $('#miner_payout').html(parsed.xtl_per_day + ' ARQ');
           $('#pool').html(parsed.pool_html);
           break;
         case "miner_stats":
@@ -185,7 +185,7 @@ let app = {
       // invalid ones
       if (shared.validateWalletAddress(configData.address) == false)
       {
-        alert("Please enter a valid Stellite address starting with 'Se'");
+        alert("Please enter a valid ArQmA address starting with 'ar'");
         return false;
       }
 

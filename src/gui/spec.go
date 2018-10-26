@@ -3,7 +3,7 @@ package gui
 import (
 	"time"
 
-	"github.com/stellitecoin/gui-miner/src/gui/miner"
+	"github.com/arqtras/gui-miner/src/gui/miner"
 )
 
 // Config contains the basic configuration for a miner
