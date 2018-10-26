@@ -15,7 +15,9 @@ dep:
 	go get -u github.com/asticode/go-astilectron-bootstrap
 	go get -u github.com/google/uuid
 	go get -u github.com/mitchellh/go-ps
-	
+	go get -u github.com/konsorten/go-windows-terminal-sequences
+	go get -u github.com/mattn/go-colorable
+
 build:
 	cd src/; astilectron-bundler -v
 
